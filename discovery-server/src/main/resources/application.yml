@@ -2,12 +2,9 @@ spring:
   application:
     name: "discovery-server"
 
-
+server:
+  port: 8761
 eureka:
-  instance:
-    hostname: "localhost"
   client:
-    service-url:
-      defaultZone: "http://localhost:8888/eureka/"
     register-with-eureka: false
     fetch-registry: false
