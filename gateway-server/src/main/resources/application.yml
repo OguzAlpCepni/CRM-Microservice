@@ -1,9 +1,7 @@
+
 spring:
   application:
-    name: "product-service"
-  #config:
-  # import: optional:configserver:http://localhost:8888/
-
+    name: gateway-server
 
 eureka:
   client:
@@ -16,4 +14,4 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}
 
 server:
-  port: 8085
+  port: 8000
